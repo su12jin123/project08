@@ -3,16 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SMITHTEA</title>
-    <!-- Link Swiper's CSS -->
+    <title>스미스티2</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="css/index.css" />
-
+    <link rel="stylesheet" href="css/smithtea.css" />
     <script src="lib/jquery-3.7.0.min.js"></script>
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
       $(function () {
@@ -85,26 +82,18 @@
         let mobileBtn = $(".mobile_menu");
         let mobileNav = $(".mobile_gnb");
 
-        //mobileNav의 left 값 확인
+
         console.log(mobileNav.offset().left);
         //화면창 너비값
         console.log(-$(window).width());
 
-        /*
-            mobileNav.css({
-                'left': -$(window).width()
-            }) */
         mobileBtn.click(function () {
           if (mobileNav.offset().left == -$(window).width()) {
-            //조건이 맞으면 실행
-            //alert('조건 맞음');
-
             $(this).addClass("on");
             mobileNav.animate({
               left: "0",
             });
           } else {
-            //alert('조건 맞지 않음')
             $(this).removeClass("on");
             mobileNav.animate({
               left: -$(window).width(),
@@ -121,7 +110,7 @@
         <div class="inner">
           <h1>
             <a href="#">
-              <img src="img/logo.png" alt="" />
+              <img src="img/logo.png" alt="로고" />
             </a>
           </h1>
 
@@ -180,12 +169,12 @@
           <ul class="pc pc_user">
             <li>
               <a href="#">
-                <img src="img/user.png" alt="" />
+                <img src="img/user.png" alt="마이페이지" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="img/search.png" alt="" />
+                <img src="img/search.png" alt="검색" />
               </a>
             </li>
           </ul>
@@ -202,12 +191,12 @@
             <ul class="user">
               <li>
                 <a href="#">
-                  <img src="img/user.png" alt="" />
+                  <img src="img/user.png" alt="마이페이지" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="img/search.png" alt="" />
+                  <img src="img/search.png" alt="검색" />
                 </a>
               </li>
             </ul>
@@ -269,7 +258,7 @@
 
       <main>
         <section class="main_visual">
-          <img src="img/main_visual.jpg" alt="" />
+          <img src="img/main_visual.jpg" alt="메인비주얼" />
           <div>
             <p>SMITHTEA ICED TEA</p>
             <h2>ICED TEA</h2>
@@ -342,7 +331,7 @@
             <div class="item">
               <a href="#">
                 <span>No.214</span>
-                <img src="img/tea3.jpg" alt="스미스티 메도우 허브차" />
+                <img src="img/tea3.jpg" alt="러버스립 홍차" />
                 <div>
                   <h4>No.214 러버스립 홍차 (15ea)</h4>
                   <strong>29,000원</strong>
@@ -420,7 +409,7 @@
             <div class="item">
               <a href="#">
                 <span>No.4</span>
-                <img src="img/tea5.jpg" alt="스미스티 레드 넥타 허브차 " />
+                <img src="img/tea5.jpg" alt="엠파워민트 허브차 " />
                 <div>
                   <h4>No.4 스미스티 엠파워민트 허브차 (15ea)</h4>
                   <strong>27,000원</strong>
@@ -467,7 +456,7 @@
         <!-- text_slide end -->
 
         <section class="beauty">
-          <img src="img/beauty.jpg" alt="" />
+          <img src="img/beauty.jpg" alt="배경이미지" />
           <div>
             <strong>TEA and AROMATHERAPY</strong>
             <h3>
@@ -490,7 +479,7 @@
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="img/recipe2.png " alt="" />
+                <img src="img/recipe2.png " alt="레시피상품" />
                 <div>
                   <h4>PINEAPPLE GREEN MOJITO</h4>
                   <p>
@@ -501,7 +490,7 @@
               </div>
               <!-- swiper-slide end -->
               <div class="swiper-slide">
-                <img src="img/recipe6.png " alt="" />
+                <img src="img/recipe6.png " alt="레시피상품" />
                 <div>
                   <h4>PINEAPPLE GREEN CAIPIRINHA</h4>
 
@@ -514,7 +503,7 @@
               </div>
               <!-- swiper-slide end -->
               <div class="swiper-slide">
-                <img src="img/recipe8.png " alt="" />
+                <img src="img/recipe8.png " alt="레시피상품" />
                 <div>
                   <h4>WHITE PETAL SANGRIA</h4>
                   <p>
@@ -525,7 +514,7 @@
               </div>
               <!-- swiper-slide end -->
               <div class="swiper-slide">
-                <img src="img/recipe4.jpg " alt="" />
+                <img src="img/recipe4.jpg " alt="레시피상품" />
                 <div>
                   <h4>RED HERRING MOCKTAIL</h4>
                   <p>
@@ -537,7 +526,7 @@
               </div>
               <!-- swiper-slide end -->
               <div class="swiper-slide">
-                <img src="img/recipe7.png " alt="" />
+                <img src="img/recipe7.png " alt="레시피상품" />
                 <div>
                   <h4>No.67 MEADOW BUTTER</h4>
                   <p>
@@ -548,7 +537,7 @@
               </div>
               <!-- swiper-slide end -->
               <div class="swiper-slide">
-                <img src="img/Recipe1.png " alt="" />
+                <img src="img/Recipe1.png " alt="레시피상품" />
                 <div>
                   <h4>HIBISCUS CRUSH</h4>
                   <p>한여름에 딱 맞는 카페인 없는 HIBISCUS CRUSH 만들기</p>
@@ -557,7 +546,7 @@
               <!-- swiper-slide end -->
 
               <div class="swiper-slide">
-                <img src="img/recipe3.png " alt="" />
+                <img src="img/recipe3.png " alt="레시피상품" />
                 <div>
                   <h4>Big Hibiscus Iced Tea Lemonade</h4>
                   <p>
@@ -569,7 +558,7 @@
               </div>
               <!-- swiper-slide end -->
               <div class="swiper-slide">
-                <img src="img/recipe9.png" alt="">
+                <img src="img/recipe9.png" alt="레시피상품">
                 <div>
                   <h4>Roasted Stone Fruit & Bungalow Tea Punch</h4>
                   <p>
@@ -580,7 +569,7 @@
               </div>
               <!-- swiper-slide end -->
               <div class="swiper-slide">
-                <img src="img/Recipe10.png" alt="">
+                <img src="img/Recipe10.png" alt="레시피상품">
                 <div>
                   <h4>Chocolate Peppermint Latte</h4>
                   <p>
@@ -590,7 +579,7 @@
               </div>
               <!-- swiper-slide end -->
               <div class="swiper-slide">
-                <img src="img/recipe7-2.png" alt="">
+                <img src="img/recipe7-2.png" alt="레시피상품">
 
                 <div>
                   <h4>RISING SUN MOCKTAIL</h4>
@@ -616,52 +605,52 @@
             <div class="list">
               <div>
                 <a href="#">
-                  <img src="img/Rectangle 16.jpg" alt="" />
+                  <img src="img/Rectangle 16.jpg" alt="인스타이미지" />
                 </a>
               </div>
               <div>
                 <a href="#">
-                  <img src="img/Rectangle 17.jpg" alt="" />
+                  <img src="img/Rectangle 17.jpg" alt="인스타이미지" />
                 </a>
               </div>
               <div>
                 <a href="#">
-                  <img src="img/Rectangle 18.jpg" alt="" />
+                  <img src="img/Rectangle 18.jpg" alt="인스타이미지" />
                 </a>
               </div>
               <div>
                 <a href="#">
-                  <img src="img/tea5.jpg" alt="" />
+                  <img src="img/tea5.jpg" alt="인스타이미지" />
                 </a>
               </div>
               <div>
                 <a href="#">
-                  <img src="img/Rectangle 21.jpg" alt="" />
+                  <img src="img/Rectangle 21.jpg" alt="인스타이미지" />
                 </a>
               </div>
               <div>
                 <a href="#">
-                  <img src="img/Rectangle 28.jpg" alt="" />
+                  <img src="img/Rectangle 28.jpg" alt="인스타이미지" />
                 </a>
               </div>
               <div>
                 <a href="#">
-                  <img src="img/Rectangle 23.jpg" alt="" />
+                  <img src="img/Rectangle 23.jpg" alt="인스타이미지" />
                 </a>
               </div>
               <div>
                 <a href="#">
-                  <img src="img/Rectangle 20.jpg" alt="" />
+                  <img src="img/Rectangle 20.jpg" alt="인스타이미지" />
                 </a>
               </div>
               <div>
                 <a href="#">
-                  <img src="img/Rectangle 25.jpg" alt="" />
+                  <img src="img/Rectangle 25.jpg" alt="인스타이미지" />
                 </a>
               </div>
               <div>
                 <a href="#">
-                  <img src="img/Rectangle 22.jpg" alt="" />
+                  <img src="img/Rectangle 22.jpg" alt="인스타이미지" />
                 </a>
               </div>
             </div>
@@ -717,10 +706,10 @@
                   <strong>OREFARM FAMILY BRANDS</strong>
                 </li>
                 <li>
-                  <a href="#"><img src="img/footer_img01.png" alt="" /></a>
+                  <a href="#"><img src="img/footer_img01.png" alt="푸터로고" /></a>
                 </li>
                 <li>
-                  <a href="#"><img src="img/footer_img02.png" alt="" /></a>
+                  <a href="#"><img src="img/footer_img02.png" alt="푸터로고" /></a>
                 </li>
               </ul>
             </div>
